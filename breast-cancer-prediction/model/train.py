@@ -30,7 +30,7 @@ from sklearn.metrics import (
 # Paths
 # ─────────────────────────────────────────────
 BASE_DIR     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_PATH    = os.path.join(BASE_DIR, "..", "data.csv")   # d:\Year2\...\Group 2\data.csv
+DATA_PATH    = os.path.join(BASE_DIR, "..", "data.csv")   
 ARTIFACT_DIR = os.path.join(BASE_DIR, "model_artifacts")
 os.makedirs(ARTIFACT_DIR, exist_ok=True)
 
