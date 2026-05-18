@@ -19,7 +19,7 @@ st.set_page_config(
 # ─────────────────────────────────────────────
 API_URL = os.environ.get(
     "API_URL",
-    "https://breast-cancer-prediction-0.onrender.com/predict",
+    "http://127.0.0.1:8000/predict",
 )
 
 _UI_DIR   = os.path.dirname(os.path.abspath(__file__))
