@@ -17,7 +17,10 @@ st.set_page_config(
 # ─────────────────────────────────────────────
 # Constants & Data Loading
 # ─────────────────────────────────────────────
-API_URL = "http://localhost:8000/predict"
+API_URL = os.environ.get(
+    "API_URL",
+    "https://breast-cancer-prediction-0.onrender.com/predict",
+)
 
 _UI_DIR   = os.path.dirname(os.path.abspath(__file__))
 _PROJ_DIR = os.path.dirname(_UI_DIR)
