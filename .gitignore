@@ -21,7 +21,7 @@ ENV/
 mlruns/
 
 # Trained model binaries (large, can be regenerated)
-model_artifacts/*.pkl
+# model_artifacts/*.pkl
 
 # Environment & secrets
 .env
