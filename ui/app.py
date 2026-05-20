@@ -21,7 +21,7 @@ st.set_page_config(
 API_URL  = "http://localhost:5000/predict"
 _UI_DIR  = os.path.dirname(os.path.abspath(__file__))
 _PROJ    = os.path.dirname(_UI_DIR)
-_CSV     = os.path.normpath(os.path.join(_PROJ, "..", "data.csv"))
+_CSV     = os.path.normpath(os.path.join(_PROJ, "data.csv"))
 
 @st.cache_data
 def load_dataset():

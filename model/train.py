@@ -30,7 +30,7 @@ from sklearn.metrics import (
 # Paths
 # ─────────────────────────────────────────────
 BASE_DIR     = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_PATH    = os.path.join(BASE_DIR, "..", "data.csv")   
+DATA_PATH    = os.path.join(BASE_DIR, "data.csv")   
 ARTIFACT_DIR = os.path.join(BASE_DIR, "model_artifacts")
 os.makedirs(ARTIFACT_DIR, exist_ok=True)
 
@@ -71,7 +71,7 @@ def train() -> None:
     if not os.path.exists(csv_path):
         raise FileNotFoundError(
             f"data.csv not found at: {csv_path}\n"
-            "Place data.csv in the parent folder of breast-cancer-prediction/."
+            "Place data.csv in the root folder of breast-cancer-prediction/."
         )
 
     df = pd.read_csv(csv_path)
