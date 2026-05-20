@@ -18,7 +18,7 @@ st.set_page_config(
 # ─────────────────────────────────────────────
 # Constants & Data Loading
 # ─────────────────────────────────────────────
-API_URL  = "http://localhost:5000/predict"
+API_URL  = "https://breast-cancer-prediction-v2-1.onrender.com/predict"
 _UI_DIR  = os.path.dirname(os.path.abspath(__file__))
 _PROJ    = os.path.dirname(_UI_DIR)
 _CSV     = os.path.normpath(os.path.join(_PROJ, "data.csv"))
